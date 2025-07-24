@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabaña El Refugio - Reservaciones</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Litepicker: Date Range Picker -->
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"/>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header y Navegación -->
+    <header id="navbar" class="bg-transparent fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">Cabaña El Refugio</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#galeria" class="text-white hover:text-amber-300 transition">Galería</a>
+                <a href="#servicios" class="text-white hover:text-amber-300 transition">Servicios</a>
+                <a href="#reservar" class="text-white hover:text-amber-300 transition">Reservar</a>
+                <a href="#ubicacion" class="text-white hover:text-amber-300 transition">Ubicación</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="hero-bg h-screen flex items-center justify-center text-center text-white">
+        <div class="px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Tu escape perfecto a la naturaleza</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Disfruta de la tranquilidad y el confort en un entorno inigualable.</p>
+            <a href="#reservar" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">
+                Reservar Ahora
+            </a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-16 md:py-24 space-y-16 md:space-y-24">
+
+        <!-- Galería -->
+        <section id="galeria">
+            <h2 class="text-3xl font-bold text-center mb-12">Nuestra Cabaña</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Vista exterior de la cabaña" class="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=2071&auto=format&fit=crop" alt="Interior acogedor con chimenea" class="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2070&auto=format&fit=crop" alt="Habitación principal" class="w-full h-64 object-cover rounded-lg shadow-lg md:col-span-2 lg:col-span-1 hover:scale-105 transition-transform duration-300">
+                <img src="https://images.unsplash.com/photo-1567016432779-1fee749b5315?q=80&w=2070&auto=format&fit=crop" alt="Cocina completamente equipada" class="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="https://images.unsplash.com/photo-1580203494132-35a55989d972?q=80&w=2070&auto=format&fit=crop" alt="Baño moderno" class="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=2070&auto=format&fit=crop" alt="Terraza con vista al bosque" class="w-full h-64 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+            </div>
+        </section>
+
+        <!-- Descripción y Servicios -->
+        <section id="servicios" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Comodidad y Estilo</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Nuestra cabaña combina el encanto rústico con todas las comodidades modernas para asegurar una estancia inolvidable. Perfecta para parejas, familias o amigos que buscan desconectar. Capacidad para 4 personas.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-6">Servicios Incluidos</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center"><svg class="w-6 h-6 text-amber-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 2 Habitaciones</li>
+                    <li class="flex items-center"><svg class="w-6 h-6 text-amber-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Cocina equipada</li>
+                    <li class="flex items-center"><svg class="w-6 h-6 text-amber-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Wi-Fi de alta velocidad</li>
+                    <li class="flex items-center"><svg class="w-6 h-6 text-amber-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Chimenea interior</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección de Reservación -->
+        <section id="reservar" class="bg-white p-8 md:p-12 rounded-lg shadow-xl">
+            <h2 class="text-3xl font-bold text-center mb-2">Solicita tu Reservación</h2>
+            <p class="text-center text-gray-600 mb-8">Completa el formulario y te enviaremos a una página de confirmación.</p>
+            
+            <div id="reservationForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Columna de datos -->
+                <div class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+                        <input type="text" id="name" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                        <input type="email" id="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Teléfono / WhatsApp</label>
+                        <input type="tel" id="phone" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                </div>
+                <!-- Columna de fechas y precio -->
+                <div class="space-y-4">
+                     <div>
+                        <label for="datepicker" class="block text-sm font-medium text-gray-700">Fechas de estancia (Llegada - Salida)</label>
+                        <input type="text" id="datepicker" readonly class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500 cursor-pointer" placeholder="Selecciona un rango de fechas">
+                    </div>
+                    <div id="price-summary" class="bg-amber-50 p-6 rounded-lg text-center hidden">
+                        <p class="text-lg">Precio estimado:</p>
+                        <p class="text-3xl font-bold text-amber-600" id="total-price">$0 MXN</p>
+                        <p class="text-sm text-gray-600" id="nights-count">por 0 noches</p>
+                    </div>
+                </div>
+                <div class="md:col-span-2 text-center mt-4">
+                    <button id="submitButton" type="button" class="w-full md:w-auto bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-12 rounded-lg text-lg transition duration-300">
+                        Enviar Solicitud
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ubicación -->
+        <section id="ubicacion">
+            <h2 class="text-3xl font-bold text-center mb-12">¿Cómo llegar?</h2>
+            <div class="rounded-lg shadow-lg overflow-hidden h-96">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14784.80517869614!2d-100.9935106871582!3d22.118671800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98c325091107%3A0x1b28537c355de516!2sCentro%2C%20San%20Luis%2C%2C%20S.L.P.!5e0!3m2!1ses!2smx!4v1721770068065!5m2!1ses!2smx" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Cabaña El Refugio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Lógica para la barra de navegación ---
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('bg-gray-900', 'shadow-lg');
+                } else {
+                    navbar.classList.remove('bg-gray-900', 'shadow-lg');
+                    navbar.classList.add('bg-transparent');
+                }
+            });
+
+            // --- Lógica del selector de fechas (Litepicker) ---
+            const pricePerNight = 2500; // PRECIO POR NOCHE (puedes cambiarlo)
+            const priceSummary = document.getElementById('price-summary');
+            const totalPriceEl = document.getElementById('total-price');
+            const nightsCountEl = document.getElementById('nights-count');
+            let dateRangeString = '';
+            let totalCostString = '';
+            
+            const picker = new Litepicker({
+                element: document.getElementById('datepicker'),
+                singleMode: false, allowRepick: true, minDate: new Date(), lang: 'es-ES', format: 'DD MMM, YYYY',
+                setup: (picker) => {
+                    picker.on('selected', (date1, date2) => {
+                        if (date1 && date2) {
+                            const diffTime = Math.abs(date2.dateInstance - date1.dateInstance);
+                            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+                            
+                            if (diffDays > 0) {
+                                const total = diffDays * pricePerNight;
+                                totalCostString = `$${total.toLocaleString('es-MX')} MXN`;
+                                dateRangeString = `Desde: ${date1.format('DD/MM/YYYY')} - Hasta: ${date2.format('DD/MM/YYYY')} (${diffDays} noches)`;
+                                
+                                totalPriceEl.textContent = totalCostString;
+                                nightsCountEl.textContent = `por ${diffDays} noche${diffDays > 1 ? 's' : ''}`;
+                                priceSummary.classList.remove('hidden');
+                            } else {
+                                priceSummary.classList.add('hidden');
+                            }
+                        }
+                    });
+                }
+            });
+
+            // --- Lógica del formulario de Google ---
+            const submitButton = document.getElementById('submitButton');
+
+            submitButton.addEventListener('click', function() {
+                // --- CONFIGURACIÓN DE GOOGLE FORMS ---
+                // 1. URL base de tu formulario de Google (sin los parámetros "entry")
+                const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScUnA0C_jBYwt1nMdTwvTXBvR_fSCC9vbei2myCZ0F4u3OA5w/viewform";
+
+                // 2. IDs de cada pregunta de tu formulario
+                const entryId_name = "entry.1347462915";
+                const entryId_contact = "entry.930019101";
+                const entryId_dates = "entry.1454828848";
+                const entryId_cost = "entry.652165852";
+                // -----------------------------------------
+
+                // Recolectar datos del formulario de la página
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+
+                // Validar que los campos no estén vacíos
+                if (!name || !email || !phone || !dateRangeString) {
+                    alert('Por favor, completa todos los campos, incluyendo las fechas.');
+                    return;
+                }
+
+                // Construir la URL pre-rellenada
+                const prefilledUrl = new URL(googleFormUrl);
+                prefilledUrl.searchParams.append('usp', 'pp_url');
+                prefilledUrl.searchParams.append(entryId_name, name);
+                prefilledUrl.searchParams.append(entryId_contact, `Email: ${email} - Tel: ${phone}`);
+                prefilledUrl.searchParams.append(entryId_dates, dateRangeString);
+                prefilledUrl.searchParams.append(entryId_cost, totalCostString);
+
+                // Abrir el formulario de Google en una nueva pestaña
+                window.open(prefilledUrl.toString(), '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
